@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mwj-38-tW4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shop List View Controller-->
+        <scene sceneID="Ipz-3M-SXJ">
+            <objects>
+                <viewController storyboardIdentifier="GNRShopListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lak-c8-qrn" customClass="GNRShopListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rHL-42-ua2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xxq-2j-BnR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EQq-4x-Gs2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gGZ-i5-iuz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lak-c8-qrn" id="4h4-oQ-0qu"/>
+                                    <outlet property="delegate" destination="Lak-c8-qrn" id="oDi-Ao-wEn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gGZ-i5-iuz" firstAttribute="leading" secondItem="EQq-4x-Gs2" secondAttribute="leading" id="0dA-Kk-Azn"/>
+                            <constraint firstAttribute="trailing" secondItem="gGZ-i5-iuz" secondAttribute="trailing" id="Cov-EL-62B"/>
+                            <constraint firstItem="Xxq-2j-BnR" firstAttribute="top" secondItem="gGZ-i5-iuz" secondAttribute="bottom" id="Lak-hb-LTe"/>
+                            <constraint firstItem="gGZ-i5-iuz" firstAttribute="top" secondItem="EQq-4x-Gs2" secondAttribute="top" id="s0K-7A-qoa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MH9-wr-qfM"/>
+                    <connections>
+                        <outlet property="tableView" destination="gGZ-i5-iuz" id="05C-VA-diO"/>
+                        <outlet property="titHeader" destination="70t-eB-qVn" id="se7-Ib-sOO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oO8-tF-K7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="70t-eB-qVn" customClass="GNRTitleHeader">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="shoplist_header_quality_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8O3-pz-E1b">
+                            <rect key="frame" x="12" y="20" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="DKl-7w-tK4"/>
+                                <constraint firstAttribute="width" constant="28" id="hPr-dG-x5N"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品质优选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJc-ym-esx">
+                            <rect key="frame" x="49" y="16.5" width="84" height="29.5"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="shoplist_header_line" translatesAutoresizingMaskIntoConstraints="NO" id="g07-8v-g7X">
+                            <rect key="frame" x="51" y="44" width="80" height="4"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="cY7-9y-ClU"/>
+                                <constraint firstAttribute="height" constant="4" id="v70-R8-gfD"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="g07-8v-g7X" firstAttribute="top" secondItem="VJc-ym-esx" secondAttribute="bottom" constant="-2" id="68h-w3-Lbe"/>
+                        <constraint firstItem="VJc-ym-esx" firstAttribute="centerY" secondItem="8O3-pz-E1b" secondAttribute="centerY" constant="-3" id="Q6B-P4-w3g"/>
+                        <constraint firstItem="VJc-ym-esx" firstAttribute="leading" secondItem="8O3-pz-E1b" secondAttribute="trailing" constant="9" id="Rth-Aq-MRL"/>
+                        <constraint firstItem="8O3-pz-E1b" firstAttribute="top" secondItem="70t-eB-qVn" secondAttribute="top" constant="20" id="TA3-wy-0ih"/>
+                        <constraint firstItem="8O3-pz-E1b" firstAttribute="leading" secondItem="70t-eB-qVn" secondAttribute="leading" constant="12" id="UYn-jB-6vw"/>
+                        <constraint firstItem="g07-8v-g7X" firstAttribute="centerX" secondItem="VJc-ym-esx" secondAttribute="centerX" id="g5g-8k-mFd"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="icon" destination="8O3-pz-E1b" id="PUQ-eB-BN8"/>
+                        <outlet property="titL" destination="VJc-ym-esx" id="1YG-IN-aTD"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="968.79999999999995" y="168.6656671664168"/>
+        </scene>
+        <!--Goods List View Controller-->
+        <scene sceneID="VVW-hD-yKT">
+            <objects>
+                <viewController storyboardIdentifier="GNRGoodsListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ies-Oh-YnV" customClass="GNRGoodsListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-gB-3ef"/>
+                        <viewControllerLayoutGuide type="bottom" id="crL-TN-A7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UyM-71-7xo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rug-z0-K4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650" y="169"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eWi-z4-sWn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mwj-38-tW4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RxV-iS-4Gr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lak-c8-qrn" kind="relationship" relationship="rootViewController" id="pNw-Jr-pxo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQ9-Ma-FSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="168.6656671664168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shoplist_header_line" width="79" height="4"/>
+        <image name="shoplist_header_quality_icon" width="25" height="25"/>
+    </resources>
+</document>

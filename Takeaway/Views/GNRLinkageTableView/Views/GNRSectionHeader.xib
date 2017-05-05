@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GNRSectionHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qt-At-KcO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MBH-Ud-iaW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="精选特卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aT-g1-ERl">
+                    <rect key="frame" x="16" y="7" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4aT-g1-ERl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Msu-Ap-nBz"/>
+                <constraint firstAttribute="bottom" secondItem="4Qt-At-KcO" secondAttribute="bottom" id="XDy-JC-fzk"/>
+                <constraint firstAttribute="trailing" secondItem="4Qt-At-KcO" secondAttribute="trailing" id="hgQ-yi-Blv"/>
+                <constraint firstItem="4aT-g1-ERl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="jaY-Pg-7Qj"/>
+                <constraint firstAttribute="trailing" secondItem="4aT-g1-ERl" secondAttribute="trailing" constant="16" id="mwB-sx-x6m"/>
+                <constraint firstItem="4Qt-At-KcO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tNU-o3-qtY"/>
+                <constraint firstItem="4Qt-At-KcO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ubA-ax-ydW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titL" destination="4aT-g1-ERl" id="5Nc-JC-iCf"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </view>
+    </objects>
+</document>

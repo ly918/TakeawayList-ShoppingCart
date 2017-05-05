@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D91945371EB8391D00FFD132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D91945361EB8391D00FFD132 /* main.m */; };
+		D919453A1EB8391D00FFD132 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D91945391EB8391D00FFD132 /* AppDelegate.m */; };
+		D91945421EB8391D00FFD132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91945411EB8391D00FFD132 /* Assets.xcassets */; };
+		D91945451EB8391D00FFD132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91945431EB8391D00FFD132 /* LaunchScreen.storyboard */; };
+		D91945501EB8391D00FFD132 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D919454F1EB8391D00FFD132 /* __Tests.m */; };
+		D919455B1EB8391D00FFD132 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D919455A1EB8391D00FFD132 /* __UITests.m */; };
+		D919456E1EB8398C00FFD132 /* GNRShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D919456D1EB8398C00FFD132 /* GNRShopListViewController.m */; };
+		D91945701EB839A000FFD132 /* Takeaway.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D919456F1EB839A000FFD132 /* Takeaway.storyboard */; };
+		D91945741EB85FFF00FFD132 /* GNRShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D91945721EB85FFF00FFD132 /* GNRShopListCell.m */; };
+		D91945751EB85FFF00FFD132 /* GNRShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91945731EB85FFF00FFD132 /* GNRShopListCell.xib */; };
+		D91945791EB8655700FFD132 /* GNRTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D91945781EB8655700FFD132 /* GNRTitleHeader.m */; };
+		D919457C1EB868C900FFD132 /* GNRGoodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D919457B1EB868C900FFD132 /* GNRGoodsListViewController.m */; };
+		D943D9051EBB1D81002D52CE /* GNRCartFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D943D9031EBB1D81002D52CE /* GNRCartFooter.m */; };
+		D943D9061EBB1D81002D52CE /* GNRCartFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = D943D9041EBB1D81002D52CE /* GNRCartFooter.xib */; };
+		D9AD5E141EB86EAA00E65F65 /* GNRLinkageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E0C1EB86EAA00E65F65 /* GNRLinkageTableView.m */; };
+		D9AD5E151EB86EAA00E65F65 /* GNRGoodsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E0F1EB86EAA00E65F65 /* GNRGoodsGroup.m */; };
+		D9AD5E161EB86EAA00E65F65 /* GNRGoodsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E111EB86EAA00E65F65 /* GNRGoodsListModel.m */; };
+		D9AD5E171EB86EAA00E65F65 /* GNRGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E131EB86EAA00E65F65 /* GNRGoodsModel.m */; };
+		D9AD5E1C1EB86EFA00E65F65 /* GNRGoodsIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E1A1EB86EFA00E65F65 /* GNRGoodsIndexCell.m */; };
+		D9AD5E1D1EB86EFA00E65F65 /* GNRGoodsIndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AD5E1B1EB86EFA00E65F65 /* GNRGoodsIndexCell.xib */; };
+		D9AD5E211EB8778500E65F65 /* GNRGoodsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E1F1EB8778500E65F65 /* GNRGoodsListCell.m */; };
+		D9AD5E221EB8778500E65F65 /* GNRGoodsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AD5E201EB8778500E65F65 /* GNRGoodsListCell.xib */; };
+		D9AD5E261EB879A200E65F65 /* GNRCountStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E251EB879A200E65F65 /* GNRCountStepper.m */; };
+		D9AD5E2A1EB8809B00E65F65 /* GNRSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AD5E291EB8809B00E65F65 /* GNRSectionHeader.m */; };
+		D9AD5E2C1EB880A400E65F65 /* GNRSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AD5E2B1EB880A400E65F65 /* GNRSectionHeader.xib */; };
+		D9B470A31EB96B8E006AA500 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470A21EB96B8E006AA500 /* UINavigationBar+Awesome.m */; };
+		D9B470A61EB96E61006AA500 /* GNRShopHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470A51EB96E61006AA500 /* GNRShopHeader.m */; };
+		D9B470A81EB96E68006AA500 /* GNRShopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B470A71EB96E68006AA500 /* GNRShopHeader.xib */; };
+		D9B470AE1EB9B3DD006AA500 /* GNRShoppingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470AD1EB9B3DD006AA500 /* GNRShoppingBar.m */; };
+		D9B470B11EB9B563006AA500 /* GNRShoppingBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470B01EB9B563006AA500 /* GNRShoppingBarView.m */; };
+		D9B470B31EB9B569006AA500 /* GNRShoppingBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B470B21EB9B569006AA500 /* GNRShoppingBarView.xib */; };
+		D9B470B81EB9C8E9006AA500 /* GNRShoppingBag.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470B71EB9C8E9006AA500 /* GNRShoppingBag.m */; };
+		D9B470BB1EB9C902006AA500 /* GNRShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470BA1EB9C902006AA500 /* GNRShoppingCart.m */; };
+		D9B470C21EB9DD68006AA500 /* GNRShoppingCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470C11EB9DD68006AA500 /* GNRShoppingCartView.m */; };
+		D9B470C51EB9E481006AA500 /* GNRCartHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470C41EB9E481006AA500 /* GNRCartHeader.m */; };
+		D9B470C71EB9E48B006AA500 /* GNRCartHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B470C61EB9E48B006AA500 /* GNRCartHeader.xib */; };
+		D9B470CB1EB9E941006AA500 /* GNRCartGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B470C91EB9E941006AA500 /* GNRCartGoodsCell.m */; };
+		D9B470CC1EB9E941006AA500 /* GNRCartGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B470CA1EB9E941006AA500 /* GNRCartGoodsCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D919454C1EB8391D00FFD132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D919452A1EB8391D00FFD132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D91945311EB8391D00FFD132;
+			remoteInfo = "外卖";
+		};
+		D91945571EB8391D00FFD132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D919452A1EB8391D00FFD132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D91945311EB8391D00FFD132;
+			remoteInfo = "外卖";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D91945321EB8391D00FFD132 /* 外卖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "外卖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91945361EB8391D00FFD132 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D91945381EB8391D00FFD132 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D91945391EB8391D00FFD132 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D91945411EB8391D00FFD132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D91945441EB8391D00FFD132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D91945461EB8391D00FFD132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D919454B1EB8391D00FFD132 /* 外卖Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "外卖Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D919454F1EB8391D00FFD132 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		D91945511EB8391D00FFD132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91945561EB8391D00FFD132 /* 外卖UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "外卖UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D919455A1EB8391D00FFD132 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
+		D919455C1EB8391D00FFD132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D919456C1EB8398C00FFD132 /* GNRShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShopListViewController.h; sourceTree = "<group>"; };
+		D919456D1EB8398C00FFD132 /* GNRShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShopListViewController.m; sourceTree = "<group>"; };
+		D919456F1EB839A000FFD132 /* Takeaway.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Takeaway.storyboard; sourceTree = "<group>"; };
+		D91945711EB85FFF00FFD132 /* GNRShopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShopListCell.h; sourceTree = "<group>"; };
+		D91945721EB85FFF00FFD132 /* GNRShopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShopListCell.m; sourceTree = "<group>"; };
+		D91945731EB85FFF00FFD132 /* GNRShopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRShopListCell.xib; sourceTree = "<group>"; };
+		D91945771EB8655700FFD132 /* GNRTitleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRTitleHeader.h; sourceTree = "<group>"; };
+		D91945781EB8655700FFD132 /* GNRTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRTitleHeader.m; sourceTree = "<group>"; };
+		D919457A1EB868C900FFD132 /* GNRGoodsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRGoodsListViewController.h; sourceTree = "<group>"; };
+		D919457B1EB868C900FFD132 /* GNRGoodsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRGoodsListViewController.m; sourceTree = "<group>"; };
+		D943D9021EBB1D81002D52CE /* GNRCartFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRCartFooter.h; sourceTree = "<group>"; };
+		D943D9031EBB1D81002D52CE /* GNRCartFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRCartFooter.m; sourceTree = "<group>"; };
+		D943D9041EBB1D81002D52CE /* GNRCartFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRCartFooter.xib; sourceTree = "<group>"; };
+		D943D9081EBB2320002D52CE /* GNRCartDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNRCartDefine.h; sourceTree = "<group>"; };
+		D9AD5E0B1EB86EAA00E65F65 /* GNRLinkageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRLinkageTableView.h; sourceTree = "<group>"; };
+		D9AD5E0C1EB86EAA00E65F65 /* GNRLinkageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRLinkageTableView.m; sourceTree = "<group>"; };
+		D9AD5E0E1EB86EAA00E65F65 /* GNRGoodsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRGoodsGroup.h; sourceTree = "<group>"; };
+		D9AD5E0F1EB86EAA00E65F65 /* GNRGoodsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRGoodsGroup.m; sourceTree = "<group>"; };
+		D9AD5E101EB86EAA00E65F65 /* GNRGoodsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRGoodsListModel.h; sourceTree = "<group>"; };
+		D9AD5E111EB86EAA00E65F65 /* GNRGoodsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRGoodsListModel.m; sourceTree = "<group>"; };
+		D9AD5E121EB86EAA00E65F65 /* GNRGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRGoodsModel.h; sourceTree = "<group>"; };
+		D9AD5E131EB86EAA00E65F65 /* GNRGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRGoodsModel.m; sourceTree = "<group>"; };
+		D9AD5E191EB86EFA00E65F65 /* GNRGoodsIndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRGoodsIndexCell.h; sourceTree = "<group>"; };
+		D9AD5E1A1EB86EFA00E65F65 /* GNRGoodsIndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRGoodsIndexCell.m; sourceTree = "<group>"; };
+		D9AD5E1B1EB86EFA00E65F65 /* GNRGoodsIndexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRGoodsIndexCell.xib; sourceTree = "<group>"; };
+		D9AD5E1E1EB8778500E65F65 /* GNRGoodsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRGoodsListCell.h; sourceTree = "<group>"; };
+		D9AD5E1F1EB8778500E65F65 /* GNRGoodsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRGoodsListCell.m; sourceTree = "<group>"; };
+		D9AD5E201EB8778500E65F65 /* GNRGoodsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRGoodsListCell.xib; sourceTree = "<group>"; };
+		D9AD5E241EB879A200E65F65 /* GNRCountStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRCountStepper.h; sourceTree = "<group>"; };
+		D9AD5E251EB879A200E65F65 /* GNRCountStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRCountStepper.m; sourceTree = "<group>"; };
+		D9AD5E281EB8809B00E65F65 /* GNRSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRSectionHeader.h; sourceTree = "<group>"; };
+		D9AD5E291EB8809B00E65F65 /* GNRSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRSectionHeader.m; sourceTree = "<group>"; };
+		D9AD5E2B1EB880A400E65F65 /* GNRSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRSectionHeader.xib; sourceTree = "<group>"; };
+		D9B470A11EB96B8E006AA500 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		D9B470A21EB96B8E006AA500 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		D9B470A41EB96E61006AA500 /* GNRShopHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShopHeader.h; sourceTree = "<group>"; };
+		D9B470A51EB96E61006AA500 /* GNRShopHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShopHeader.m; sourceTree = "<group>"; };
+		D9B470A71EB96E68006AA500 /* GNRShopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRShopHeader.xib; sourceTree = "<group>"; };
+		D9B470AC1EB9B3DD006AA500 /* GNRShoppingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShoppingBar.h; sourceTree = "<group>"; };
+		D9B470AD1EB9B3DD006AA500 /* GNRShoppingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShoppingBar.m; sourceTree = "<group>"; };
+		D9B470AF1EB9B563006AA500 /* GNRShoppingBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShoppingBarView.h; sourceTree = "<group>"; };
+		D9B470B01EB9B563006AA500 /* GNRShoppingBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShoppingBarView.m; sourceTree = "<group>"; };
+		D9B470B21EB9B569006AA500 /* GNRShoppingBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRShoppingBarView.xib; sourceTree = "<group>"; };
+		D9B470B61EB9C8E9006AA500 /* GNRShoppingBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShoppingBag.h; sourceTree = "<group>"; };
+		D9B470B71EB9C8E9006AA500 /* GNRShoppingBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShoppingBag.m; sourceTree = "<group>"; };
+		D9B470B91EB9C902006AA500 /* GNRShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShoppingCart.h; sourceTree = "<group>"; };
+		D9B470BA1EB9C902006AA500 /* GNRShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShoppingCart.m; sourceTree = "<group>"; };
+		D9B470C01EB9DD68006AA500 /* GNRShoppingCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRShoppingCartView.h; sourceTree = "<group>"; };
+		D9B470C11EB9DD68006AA500 /* GNRShoppingCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRShoppingCartView.m; sourceTree = "<group>"; };
+		D9B470C31EB9E481006AA500 /* GNRCartHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRCartHeader.h; sourceTree = "<group>"; };
+		D9B470C41EB9E481006AA500 /* GNRCartHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRCartHeader.m; sourceTree = "<group>"; };
+		D9B470C61EB9E48B006AA500 /* GNRCartHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRCartHeader.xib; sourceTree = "<group>"; };
+		D9B470C81EB9E941006AA500 /* GNRCartGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRCartGoodsCell.h; sourceTree = "<group>"; };
+		D9B470C91EB9E941006AA500 /* GNRCartGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRCartGoodsCell.m; sourceTree = "<group>"; };
+		D9B470CA1EB9E941006AA500 /* GNRCartGoodsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRCartGoodsCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D919452F1EB8391D00FFD132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91945481EB8391D00FFD132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91945531EB8391D00FFD132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D91945291EB8391D00FFD132 = {
+			isa = PBXGroup;
+			children = (
+				D9B470A01EB96B8D006AA500 /* GNRTools */,
+				D91945681EB8394E00FFD132 /* Takeaway */,
+				D91945341EB8391D00FFD132 /* 外卖 */,
+				D919454E1EB8391D00FFD132 /* 外卖Tests */,
+				D91945591EB8391D00FFD132 /* 外卖UITests */,
+				D91945331EB8391D00FFD132 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D91945331EB8391D00FFD132 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D91945321EB8391D00FFD132 /* 外卖.app */,
+				D919454B1EB8391D00FFD132 /* 外卖Tests.xctest */,
+				D91945561EB8391D00FFD132 /* 外卖UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D91945341EB8391D00FFD132 /* 外卖 */ = {
+			isa = PBXGroup;
+			children = (
+				D91945381EB8391D00FFD132 /* AppDelegate.h */,
+				D91945391EB8391D00FFD132 /* AppDelegate.m */,
+				D91945411EB8391D00FFD132 /* Assets.xcassets */,
+				D91945431EB8391D00FFD132 /* LaunchScreen.storyboard */,
+				D91945461EB8391D00FFD132 /* Info.plist */,
+				D91945351EB8391D00FFD132 /* Supporting Files */,
+			);
+			path = "外卖";
+			sourceTree = "<group>";
+		};
+		D91945351EB8391D00FFD132 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D91945361EB8391D00FFD132 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D919454E1EB8391D00FFD132 /* 外卖Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D919454F1EB8391D00FFD132 /* __Tests.m */,
+				D91945511EB8391D00FFD132 /* Info.plist */,
+			);
+			path = "外卖Tests";
+			sourceTree = "<group>";
+		};
+		D91945591EB8391D00FFD132 /* 外卖UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D919455A1EB8391D00FFD132 /* __UITests.m */,
+				D919455C1EB8391D00FFD132 /* Info.plist */,
+			);
+			path = "外卖UITests";
+			sourceTree = "<group>";
+		};
+		D91945681EB8394E00FFD132 /* Takeaway */ = {
+			isa = PBXGroup;
+			children = (
+				D91945761EB8654600FFD132 /* Views */,
+				D91945691EB8396E00FFD132 /* Cells */,
+				D919456A1EB8396E00FFD132 /* Classes */,
+				D919456B1EB8396E00FFD132 /* Models */,
+				D919456F1EB839A000FFD132 /* Takeaway.storyboard */,
+			);
+			path = Takeaway;
+			sourceTree = "<group>";
+		};
+		D91945691EB8396E00FFD132 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D91945711EB85FFF00FFD132 /* GNRShopListCell.h */,
+				D91945721EB85FFF00FFD132 /* GNRShopListCell.m */,
+				D91945731EB85FFF00FFD132 /* GNRShopListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D919456A1EB8396E00FFD132 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D919456C1EB8398C00FFD132 /* GNRShopListViewController.h */,
+				D919456D1EB8398C00FFD132 /* GNRShopListViewController.m */,
+				D919457A1EB868C900FFD132 /* GNRGoodsListViewController.h */,
+				D919457B1EB868C900FFD132 /* GNRGoodsListViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D919456B1EB8396E00FFD132 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D91945761EB8654600FFD132 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9B470A91EB9B0E0006AA500 /* ShoppingCart */,
+				D9AD5E0A1EB86EAA00E65F65 /* GNRLinkageTableView */,
+				D91945771EB8655700FFD132 /* GNRTitleHeader.h */,
+				D91945781EB8655700FFD132 /* GNRTitleHeader.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9AD5E0A1EB86EAA00E65F65 /* GNRLinkageTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD5E271EB8805A00E65F65 /* Views */,
+				D9AD5E231EB8799300E65F65 /* Stepper */,
+				D9AD5E181EB86ED500E65F65 /* Cells */,
+				D9AD5E0B1EB86EAA00E65F65 /* GNRLinkageTableView.h */,
+				D9AD5E0C1EB86EAA00E65F65 /* GNRLinkageTableView.m */,
+				D9AD5E0D1EB86EAA00E65F65 /* Models */,
+			);
+			path = GNRLinkageTableView;
+			sourceTree = "<group>";
+		};
+		D9AD5E0D1EB86EAA00E65F65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD5E0E1EB86EAA00E65F65 /* GNRGoodsGroup.h */,
+				D9AD5E0F1EB86EAA00E65F65 /* GNRGoodsGroup.m */,
+				D9AD5E101EB86EAA00E65F65 /* GNRGoodsListModel.h */,
+				D9AD5E111EB86EAA00E65F65 /* GNRGoodsListModel.m */,
+				D9AD5E121EB86EAA00E65F65 /* GNRGoodsModel.h */,
+				D9AD5E131EB86EAA00E65F65 /* GNRGoodsModel.m */,
+				D9B470B91EB9C902006AA500 /* GNRShoppingCart.h */,
+				D9B470BA1EB9C902006AA500 /* GNRShoppingCart.m */,
+				D9B470B61EB9C8E9006AA500 /* GNRShoppingBag.h */,
+				D9B470B71EB9C8E9006AA500 /* GNRShoppingBag.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9AD5E181EB86ED500E65F65 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD5E191EB86EFA00E65F65 /* GNRGoodsIndexCell.h */,
+				D9AD5E1A1EB86EFA00E65F65 /* GNRGoodsIndexCell.m */,
+				D9AD5E1B1EB86EFA00E65F65 /* GNRGoodsIndexCell.xib */,
+				D9AD5E1E1EB8778500E65F65 /* GNRGoodsListCell.h */,
+				D9AD5E1F1EB8778500E65F65 /* GNRGoodsListCell.m */,
+				D9AD5E201EB8778500E65F65 /* GNRGoodsListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D9AD5E231EB8799300E65F65 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD5E241EB879A200E65F65 /* GNRCountStepper.h */,
+				D9AD5E251EB879A200E65F65 /* GNRCountStepper.m */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		D9AD5E271EB8805A00E65F65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD5E281EB8809B00E65F65 /* GNRSectionHeader.h */,
+				D9AD5E291EB8809B00E65F65 /* GNRSectionHeader.m */,
+				D9AD5E2B1EB880A400E65F65 /* GNRSectionHeader.xib */,
+				D9B470A41EB96E61006AA500 /* GNRShopHeader.h */,
+				D9B470A51EB96E61006AA500 /* GNRShopHeader.m */,
+				D9B470A71EB96E68006AA500 /* GNRShopHeader.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9B470A01EB96B8D006AA500 /* GNRTools */ = {
+			isa = PBXGroup;
+			children = (
+				D9B470A11EB96B8E006AA500 /* UINavigationBar+Awesome.h */,
+				D9B470A21EB96B8E006AA500 /* UINavigationBar+Awesome.m */,
+			);
+			path = GNRTools;
+			sourceTree = "<group>";
+		};
+		D9B470A91EB9B0E0006AA500 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				D9B470B51EB9C083006AA500 /* Utils */,
+				D9B470AA1EB9B0E0006AA500 /* Bar */,
+				D9B470AB1EB9B0E0006AA500 /* Cart */,
+				D943D9081EBB2320002D52CE /* GNRCartDefine.h */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		D9B470AA1EB9B0E0006AA500 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				D9B470AC1EB9B3DD006AA500 /* GNRShoppingBar.h */,
+				D9B470AD1EB9B3DD006AA500 /* GNRShoppingBar.m */,
+				D9B470AF1EB9B563006AA500 /* GNRShoppingBarView.h */,
+				D9B470B01EB9B563006AA500 /* GNRShoppingBarView.m */,
+				D9B470B21EB9B569006AA500 /* GNRShoppingBarView.xib */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
+		D9B470AB1EB9B0E0006AA500 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				D9B470C01EB9DD68006AA500 /* GNRShoppingCartView.h */,
+				D9B470C11EB9DD68006AA500 /* GNRShoppingCartView.m */,
+				D9B470C31EB9E481006AA500 /* GNRCartHeader.h */,
+				D9B470C41EB9E481006AA500 /* GNRCartHeader.m */,
+				D9B470C61EB9E48B006AA500 /* GNRCartHeader.xib */,
+				D943D9021EBB1D81002D52CE /* GNRCartFooter.h */,
+				D943D9031EBB1D81002D52CE /* GNRCartFooter.m */,
+				D943D9041EBB1D81002D52CE /* GNRCartFooter.xib */,
+				D9B470C81EB9E941006AA500 /* GNRCartGoodsCell.h */,
+				D9B470C91EB9E941006AA500 /* GNRCartGoodsCell.m */,
+				D9B470CA1EB9E941006AA500 /* GNRCartGoodsCell.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		D9B470B51EB9C083006AA500 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D91945311EB8391D00FFD132 /* 外卖 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D919455F1EB8391D00FFD132 /* Build configuration list for PBXNativeTarget "外卖" */;
+			buildPhases = (
+				D919452E1EB8391D00FFD132 /* Sources */,
+				D919452F1EB8391D00FFD132 /* Frameworks */,
+				D91945301EB8391D00FFD132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "外卖";
+			productName = "外卖";
+			productReference = D91945321EB8391D00FFD132 /* 外卖.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D919454A1EB8391D00FFD132 /* 外卖Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D91945621EB8391D00FFD132 /* Build configuration list for PBXNativeTarget "外卖Tests" */;
+			buildPhases = (
+				D91945471EB8391D00FFD132 /* Sources */,
+				D91945481EB8391D00FFD132 /* Frameworks */,
+				D91945491EB8391D00FFD132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D919454D1EB8391D00FFD132 /* PBXTargetDependency */,
+			);
+			name = "外卖Tests";
+			productName = "外卖Tests";
+			productReference = D919454B1EB8391D00FFD132 /* 外卖Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D91945551EB8391D00FFD132 /* 外卖UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D91945651EB8391D00FFD132 /* Build configuration list for PBXNativeTarget "外卖UITests" */;
+			buildPhases = (
+				D91945521EB8391D00FFD132 /* Sources */,
+				D91945531EB8391D00FFD132 /* Frameworks */,
+				D91945541EB8391D00FFD132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D91945581EB8391D00FFD132 /* PBXTargetDependency */,
+			);
+			name = "外卖UITests";
+			productName = "外卖UITests";
+			productReference = D91945561EB8391D00FFD132 /* 外卖UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D919452A1EB8391D00FFD132 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = BattlePetal;
+				TargetAttributes = {
+					D91945311EB8391D00FFD132 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3637NJMX7D;
+						ProvisioningStyle = Automatic;
+					};
+					D919454A1EB8391D00FFD132 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3637NJMX7D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D91945311EB8391D00FFD132;
+					};
+					D91945551EB8391D00FFD132 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3637NJMX7D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D91945311EB8391D00FFD132;
+					};
+				};
+			};
+			buildConfigurationList = D919452D1EB8391D00FFD132 /* Build configuration list for PBXProject "外卖" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D91945291EB8391D00FFD132;
+			productRefGroup = D91945331EB8391D00FFD132 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D91945311EB8391D00FFD132 /* 外卖 */,
+				D919454A1EB8391D00FFD132 /* 外卖Tests */,
+				D91945551EB8391D00FFD132 /* 外卖UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D91945301EB8391D00FFD132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AD5E221EB8778500E65F65 /* GNRGoodsListCell.xib in Resources */,
+				D91945451EB8391D00FFD132 /* LaunchScreen.storyboard in Resources */,
+				D943D9061EBB1D81002D52CE /* GNRCartFooter.xib in Resources */,
+				D91945701EB839A000FFD132 /* Takeaway.storyboard in Resources */,
+				D91945751EB85FFF00FFD132 /* GNRShopListCell.xib in Resources */,
+				D9B470A81EB96E68006AA500 /* GNRShopHeader.xib in Resources */,
+				D9B470CC1EB9E941006AA500 /* GNRCartGoodsCell.xib in Resources */,
+				D91945421EB8391D00FFD132 /* Assets.xcassets in Resources */,
+				D9AD5E1D1EB86EFA00E65F65 /* GNRGoodsIndexCell.xib in Resources */,
+				D9AD5E2C1EB880A400E65F65 /* GNRSectionHeader.xib in Resources */,
+				D9B470C71EB9E48B006AA500 /* GNRCartHeader.xib in Resources */,
+				D9B470B31EB9B569006AA500 /* GNRShoppingBarView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91945491EB8391D00FFD132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91945541EB8391D00FFD132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D919452E1EB8391D00FFD132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B470CB1EB9E941006AA500 /* GNRCartGoodsCell.m in Sources */,
+				D919453A1EB8391D00FFD132 /* AppDelegate.m in Sources */,
+				D919457C1EB868C900FFD132 /* GNRGoodsListViewController.m in Sources */,
+				D9AD5E151EB86EAA00E65F65 /* GNRGoodsGroup.m in Sources */,
+				D919456E1EB8398C00FFD132 /* GNRShopListViewController.m in Sources */,
+				D9B470B11EB9B563006AA500 /* GNRShoppingBarView.m in Sources */,
+				D9B470A61EB96E61006AA500 /* GNRShopHeader.m in Sources */,
+				D9B470A31EB96B8E006AA500 /* UINavigationBar+Awesome.m in Sources */,
+				D9AD5E2A1EB8809B00E65F65 /* GNRSectionHeader.m in Sources */,
+				D9AD5E211EB8778500E65F65 /* GNRGoodsListCell.m in Sources */,
+				D943D9051EBB1D81002D52CE /* GNRCartFooter.m in Sources */,
+				D9AD5E161EB86EAA00E65F65 /* GNRGoodsListModel.m in Sources */,
+				D91945371EB8391D00FFD132 /* main.m in Sources */,
+				D9B470C21EB9DD68006AA500 /* GNRShoppingCartView.m in Sources */,
+				D9AD5E261EB879A200E65F65 /* GNRCountStepper.m in Sources */,
+				D9AD5E141EB86EAA00E65F65 /* GNRLinkageTableView.m in Sources */,
+				D9B470C51EB9E481006AA500 /* GNRCartHeader.m in Sources */,
+				D9B470BB1EB9C902006AA500 /* GNRShoppingCart.m in Sources */,
+				D9B470AE1EB9B3DD006AA500 /* GNRShoppingBar.m in Sources */,
+				D9AD5E1C1EB86EFA00E65F65 /* GNRGoodsIndexCell.m in Sources */,
+				D91945791EB8655700FFD132 /* GNRTitleHeader.m in Sources */,
+				D9AD5E171EB86EAA00E65F65 /* GNRGoodsModel.m in Sources */,
+				D91945741EB85FFF00FFD132 /* GNRShopListCell.m in Sources */,
+				D9B470B81EB9C8E9006AA500 /* GNRShoppingBag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91945471EB8391D00FFD132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91945501EB8391D00FFD132 /* __Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91945521EB8391D00FFD132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D919455B1EB8391D00FFD132 /* __UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D919454D1EB8391D00FFD132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D91945311EB8391D00FFD132 /* 外卖 */;
+			targetProxy = D919454C1EB8391D00FFD132 /* PBXContainerItemProxy */;
+		};
+		D91945581EB8391D00FFD132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D91945311EB8391D00FFD132 /* 外卖 */;
+			targetProxy = D91945571EB8391D00FFD132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D91945431EB8391D00FFD132 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D91945441EB8391D00FFD132 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D919455D1EB8391D00FFD132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D919455E1EB8391D00FFD132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D91945601EB8391D00FFD132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3637NJMX7D;
+				INFOPLIST_FILE = "外卖/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.occode.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D91945611EB8391D00FFD132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3637NJMX7D;
+				INFOPLIST_FILE = "外卖/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.occode.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D91945631EB8391D00FFD132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3637NJMX7D;
+				INFOPLIST_FILE = "外卖Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.occode.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/外卖.app/外卖";
+			};
+			name = Debug;
+		};
+		D91945641EB8391D00FFD132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3637NJMX7D;
+				INFOPLIST_FILE = "外卖Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.occode.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/外卖.app/外卖";
+			};
+			name = Release;
+		};
+		D91945661EB8391D00FFD132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3637NJMX7D;
+				INFOPLIST_FILE = "外卖UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.occode.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "外卖";
+			};
+			name = Debug;
+		};
+		D91945671EB8391D00FFD132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3637NJMX7D;
+				INFOPLIST_FILE = "外卖UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.occode.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "外卖";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D919452D1EB8391D00FFD132 /* Build configuration list for PBXProject "外卖" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D919455D1EB8391D00FFD132 /* Debug */,
+				D919455E1EB8391D00FFD132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D919455F1EB8391D00FFD132 /* Build configuration list for PBXNativeTarget "外卖" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91945601EB8391D00FFD132 /* Debug */,
+				D91945611EB8391D00FFD132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D91945621EB8391D00FFD132 /* Build configuration list for PBXNativeTarget "外卖Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91945631EB8391D00FFD132 /* Debug */,
+				D91945641EB8391D00FFD132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D91945651EB8391D00FFD132 /* Build configuration list for PBXNativeTarget "外卖UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91945661EB8391D00FFD132 /* Debug */,
+				D91945671EB8391D00FFD132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D919452A1EB8391D00FFD132 /* Project object */;
+}
