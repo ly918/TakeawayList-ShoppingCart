@@ -2,6 +2,4 @@
 
 <h3><strong>效果展示</strong></h3>
 
-<p><img alt="" src="http://static.oschina.net/uploads/space/2016/0713/105703_7xtO_2279344.png" /></p>
-
 <p><img alt="" src="https://github.com/ly918/TakeawayList-ShoppingCart/blob/master/record.gif" /></p>
