@@ -23,7 +23,7 @@
     _selectView.backgroundColor = [UIColor whiteColor];
     self.selectedBackgroundView = _selectView;
     
-    UIView *liner = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 3, 16)];
+    UIView *liner = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 4, 13)];
     liner.backgroundColor = _nameL.textColor;
     [_selectView addSubview:liner];
     liner.center = CGPointMake(2, _nameL.center.y);

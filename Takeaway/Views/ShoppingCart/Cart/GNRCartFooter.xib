@@ -32,7 +32,7 @@
                     <constraint firstAttribute="bottom" secondItem="e8a-Hx-ojs" secondAttribute="bottom" constant="2.5" id="bRd-xE-DHv"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
     </objects>
 </document>

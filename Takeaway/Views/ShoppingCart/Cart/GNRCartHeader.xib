@@ -29,7 +29,7 @@
                     </state>
                 </button>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="jaV-O1-nJS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZmM-ZE-88k"/>
                 <constraint firstAttribute="trailing" secondItem="jaV-O1-nJS" secondAttribute="trailing" constant="12" id="gNX-Fx-Amd"/>

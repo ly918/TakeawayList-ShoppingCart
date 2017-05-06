@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="毛肚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPQ-eW-pBv">
-                        <rect key="frame" x="12" y="17" width="154" height="17"/>
+                        <rect key="frame" x="12" y="17" width="142" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥10.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAk-wb-Ezs">
-                        <rect key="frame" x="174" y="17" width="50" height="17"/>
+                        <rect key="frame" x="162" y="17" width="50" height="17"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="h0a-EC-KZo"/>
                         </constraints>
@@ -46,7 +46,7 @@
                 <constraints>
                     <constraint firstItem="dRC-28-Vwe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B5K-gp-q7b"/>
                     <constraint firstAttribute="trailingMargin" secondItem="dRC-28-Vwe" secondAttribute="trailing" id="J6i-AL-x09"/>
-                    <constraint firstItem="dRC-28-Vwe" firstAttribute="leading" secondItem="QAk-wb-Ezs" secondAttribute="trailing" constant="8" id="VXu-43-2pU"/>
+                    <constraint firstItem="dRC-28-Vwe" firstAttribute="leading" secondItem="QAk-wb-Ezs" secondAttribute="trailing" constant="20" id="VXu-43-2pU"/>
                     <constraint firstItem="LPQ-eW-pBv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ZWQ-fW-d99"/>
                     <constraint firstItem="QAk-wb-Ezs" firstAttribute="centerY" secondItem="dRC-28-Vwe" secondAttribute="centerY" id="cDg-3a-s3T"/>
                     <constraint firstItem="LPQ-eW-pBv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rB0-cD-BLw"/>

@@ -15,11 +15,6 @@
     // Initialization code
 }
 
-- (void)drawRect:(CGRect)rect{
-    self.layer.borderColor = [UIColor colorWithWhite:0.8 alpha:0.8].CGColor;
-    self.layer.borderWidth = 0.4;
-}
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

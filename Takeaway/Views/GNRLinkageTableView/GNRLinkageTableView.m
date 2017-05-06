@@ -148,7 +148,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (tableView==_rightTbView) {
-        return 30.f;
+//        return 30.f;
+        return 0.01;
     }
     return 0;
 }
@@ -160,20 +161,20 @@
     return CGFLOAT_MIN;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    if (tableView==_rightTbView) {
-        GNRSectionHeader * header = (GNRSectionHeader *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GNRSectionHeader"];
-        if (!header) {
-            header = (GNRSectionHeader *)[[[NSBundle mainBundle]loadNibNamed:@"GNRSectionHeader" owner:self options:nil]firstObject];
-        }
-        if (section<self.goodsList.goodsGroups.count) {
-            GNRGoodsGroup * goodsGroup = self.goodsList.goodsGroups[section];
-            header.titL.text = goodsGroup.classesName;
-        }
-        return header;
-    }
-    return nil;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    if (tableView==_rightTbView) {
+//        GNRSectionHeader * header = (GNRSectionHeader *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GNRSectionHeader"];
+//        if (!header) {
+//            header = (GNRSectionHeader *)[[[NSBundle mainBundle]loadNibNamed:@"GNRSectionHeader" owner:self options:nil]firstObject];
+//        }
+//        if (section<self.goodsList.goodsGroups.count) {
+//            GNRGoodsGroup * goodsGroup = self.goodsList.goodsGroups[section];
+//            header.titL.text = goodsGroup.classesName;
+//        }
+//        return header;
+//    }
+//    return nil;
+//}
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
     if (relate) {
@@ -234,6 +235,10 @@
             } completion:^(BOOL finished) {
                 
             }];
+            if (scrollView.contentOffset.y == 0) {//这里解决点击状态栏回到顶部 左边不滚动的问题
+                relate = YES;
+                [_rightTbView reloadData];
+            }
         }else{
             if (self.frame.origin.y!=0) {
                 self.frame = CGRectMake(0, 0, BOUNDS.size.width, BOUNDS.size.height);
@@ -242,5 +247,6 @@
         }
     }
 }
+
 
 @end
